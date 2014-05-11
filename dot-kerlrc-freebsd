@@ -1,0 +1,12 @@
+# since .kerl is a dot file for /bin/sh, exporting inside the environment will define the env variables
+# NOTE WELL: these export command will affect *your login environment* when activating curl!
+# for clang with concurrent make
+#export CC=clang CXX=clang CFLAGS="-g -O3 -fstack-protector" LDFLAGS="-fstack-protector" MAKEFLAGS="-j"
+# for gcc47
+#export CC=gcc47 CXX=gcc47 CFLAGS="-g -O3 -fomit-frame-pointer -fstack-protector" LDFLAGS="-fstack-protector" MAKEFLAGS="-j"
+# with wx
+#KERL_CONFIGURE_OPTIONS="--disable-native-libs --enable-vm-probes --with-dynamic-trace=dtrace --with-ssl=/usr/local --with-javac --disable-hipe --enable-kernel-poll --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-odbc --enable-threads --enable-sctp --enable-smp-support"
+# with wx, with HiPE (17.0-hipe)
+#KERL_CONFIGURE_OPTIONS="--disable-native-libs --enable-vm-probes --with-dynamic-trace=dtrace --with-ssl=/usr/local --with-javac --enable-hipe --enable-kernel-poll --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-odbc --enable-threads --enable-sctp --enable-smp-support"
+# with wx, with HiPE and native libs enabled, even more aggressive options (17.0-native)
+#KERL_CONFIGURE_OPTIONS="--enable-native-libs --enable-vm-probes --with-dynamic-trace=dtrace --with-ssl=/usr/local --with-javac --enable-hipe --enable-kernel-poll --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-odbc --enable-threads --enable-sctp --enable-smp-support -enable-dirty-schedulers --disable-silent-rules"
