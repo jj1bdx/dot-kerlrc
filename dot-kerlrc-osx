@@ -1,0 +1,14 @@
+# since .kerl is a dot file for /bin/sh, exporting inside the environment will define the env variables
+# NOTE WELL: the export commands will affect *your login environment* when activating curl!
+# without wx
+#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/gcc-4.7 CXX=/usr/local/opt/ccache/libexec/g++-4.7 --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --without-wx"
+# with wx (17.0)
+#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/gcc-4.7 CXX=/usr/local/opt/ccache/libexec/g++-4.7 --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx"
+# with wx, HiPE enabled (17.0-hipe)
+#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/gcc-4.7 CXX=/usr/local/opt/ccache/libexec/g++-4.7 --enable-darwin-64bit --enable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx"
+# with wx, HiPE enabled, even more aggressive options (17.0-test)
+KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/gcc-4.7 CXX=/usr/local/opt/ccache/libexec/g++-4.7 --enable-darwin-64bit --enable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --enable-dirty-schedulers --disable-silent-rules --with-wx"
+# with wx, but original C compiler
+#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/cc CXX=/usr/local/opt/ccache/libexec/c++ --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx"
+# for reference only: see http://blog.equanimity.nl/blog/2014/02/09/erlang-r17-rc1-on-osx-with-wx-and-a-working-observer/
+#KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-smp-support --enable-threads --enable-kernel-poll --with-wx" 
