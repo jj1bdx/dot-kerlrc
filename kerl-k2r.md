@@ -1,5 +1,7 @@
 # kerl at k2r.org
 
+Note: examples here are old, though still applicable for Erlang/OTP 17.0 and later.
+
 ## compilation command set example
 
      kerl update releases
