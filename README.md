@@ -5,13 +5,13 @@ Configuration file `.kerlrc` for [kerl](https://github.com/spawngrid/kerl).
 ## compilation command set example
 
      kerl update releases
-     kerl build 17.0 17.0
-     kerl install 17.0 /home/kenji/otp/r15b03-1/
+     kerl build 17.1 17.1
+     kerl install 17.1 /home/kenji/otp/17.1
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j10" kerl build R16B03 r16b03-test
+    env MAKEFLAGS="-j10" kerl build 17.1 17.1-test
 
 ## .kerlrc
 
@@ -39,16 +39,17 @@ Configuration file `.kerlrc` for [kerl](https://github.com/spawngrid/kerl).
         CC=clang CXX=clang \
         CFLAGS="-g -O0 -fstack-protector" \
         LDFLAGS="-fstack-protector" \
-    kerl build R16B02 clang-r16b02
+    kerl build 17.1 17.1
 
 ### for FreeBSD 10.0-STABLE clang/gcc47 with .kerlrc embedded script
 
 See `dot-kerlrc-freebsd`
 
-### for Mac OS X 10.9.3
+### for Mac OS X 10.9.4
 
-See `dot-kerlrc-osx`. Note: wxmac 3.0.1.0 works OK on the 64bit build,
-but you need to recompile the erlang distribution and relink the wx library.
+See `dot-kerlrc-osx`. Note: wxmac 3.0.1.0 works OK on the 64bit build, You need
+to recompile the erlang distribution and relink the wx library if the wxmac is
+upgraded to a new version.
 
 ### for Ubuntu 12.10 with systemtap (OLD)
 
