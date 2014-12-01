@@ -1,12 +1,17 @@
 # dot-kerlrc
 
-Configuration file `.kerlrc` for [kerl](https://github.com/spawngrid/kerl).
+Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
 
 ## compilation command set example
 
-     kerl update releases
-     kerl build 17.3 17.3
-     kerl install 17.3 /home/kenji/otp/17.3
+    kerl update releases
+    kerl build 17.3 17.3
+    kerl install 17.3 /home/kenji/otp/17.3
+
+## For obtaining git release from GitHub Erlang/OTP archive
+
+    # use the following `kerl build git` command
+    kerl build git https://github.com/erlang/otp/ OTP-17.3.4 17.3.4
 
 ## Enforcing concurrency in `make`
 
