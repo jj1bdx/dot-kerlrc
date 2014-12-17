@@ -5,18 +5,18 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
 ## compilation command set example
 
     kerl update releases
-    kerl build 17.3 17.3
-    kerl install 17.3 /home/kenji/otp/17.3
+    kerl build 17.4 17.4
+    kerl install 17.4 /home/kenji/otp/17.4
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-17.3.4 17.3.4
+    kerl build git https://github.com/erlang/otp/ OTP-17.4 17.4
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 17.3 17.3-test
+    env MAKEFLAGS="-j8" kerl build 17.4 17.4-test
 
 ## .kerlrc
 
@@ -44,7 +44,7 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
         CC=clang CXX=clang \
         CFLAGS="-g -O0 -fstack-protector" \
         LDFLAGS="-fstack-protector" \
-    kerl build 17.3 17.3
+    kerl build 17.4 17.4
 
 ### for FreeBSD 10.1-STABLE
 
@@ -54,5 +54,5 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
 ### for Mac OS X 10.10
 
 * See `dot-kerlrc-osx`
-* Use `gcc-4.8` in HomeBrew
+* Use `gcc-4.9` in HomeBrew
 
