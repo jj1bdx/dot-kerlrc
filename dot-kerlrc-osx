@@ -1,8 +1,6 @@
 # since .kerl is a dot file for /bin/sh, exporting inside the environment will define the env variables
 # NOTE WELL: the export commands will affect *your login environment* when activating curl!
 # with wx, HiPE enabled
-KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/gcc-4.9 CXX=/usr/local/opt/ccache/libexec/g++-4.9 --enable-darwin-64bit --enable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx --disable-silent-rules"
-# with wx, HiPE enabled, even more aggressive options
-#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/gcc-4.9 CXX=/usr/local/opt/ccache/libexec/g++-4.9 --enable-darwin-64bit --enable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --enable-dirty-schedulers --disable-silent-rules --with-wx"
+KERL_CONFIGURE_OPTIONS="CC=/usr/local/bin/gcc-5 CXX=/usr/local/bin/g++-5 --enable-darwin-64bit --enable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx --disable-silent-rules"
 # with wx, but original C compiler
 #KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/cc CXX=/usr/local/opt/ccache/libexec/c++ --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx"
