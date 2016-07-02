@@ -5,18 +5,18 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
 ## compilation command set example
 
     kerl update releases
-    kerl build 18.1 18.1
-    kerl install 18.1 /home/kenji/otp/18.1
+    kerl build 19.0 19.0
+    kerl install 19.0 /home/kenji/otp/19.0
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-18.1.1 18.1.1
+    kerl build git https://github.com/erlang/otp/ OTP-19.0.1 19.0.1
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 18.1 18.1-test
+    env MAKEFLAGS="-j8" kerl build 19.0 19.0-test
 
 ## .kerlrc
 
@@ -46,7 +46,7 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
         LDFLAGS="-fstack-protector" \
     kerl build 17.4 17.4
 
-### for FreeBSD 10.2-STABLE
+### for FreeBSD 10.3-STABLE
 
 * See `dot-kerlrc-freebsd`
 * Use `clang`
