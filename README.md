@@ -57,4 +57,6 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
 * Use `clang`
 * Use OpenSSL in homebrew at `/usr/local/opt/openssl`
 * Java required when using JDK: see <https://support.apple.com/kb/DL1572>
+* Update ccache to the latest version
+* If build fails, try it again *without* ccache
 
