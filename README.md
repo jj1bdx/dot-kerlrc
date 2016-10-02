@@ -2,21 +2,25 @@
 
 Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
 
+## License
+
+Public domain. See `UNLICENSE`.
+
 ## compilation command set example
 
     kerl update releases
-    kerl build 19.0 19.0
-    kerl install 19.0 /home/kenji/otp/19.0
+    kerl build 19.1 19.1
+    kerl install 19.1 /home/kenji/otp/19.1
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-19.0.1 19.0.1
+    kerl build git https://github.com/erlang/otp/ OTP-19.1.1 19.1.1
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 19.0 19.0-test
+    env MAKEFLAGS="-j8" kerl build 19.1 19.1-test
 
 ## .kerlrc
 
@@ -44,19 +48,19 @@ Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
         CC=clang CXX=clang \
         CFLAGS="-g -O0 -fstack-protector" \
         LDFLAGS="-fstack-protector" \
-    kerl build 17.4 17.4
+    kerl build 19.1 19.1
 
-### for FreeBSD 10.3-STABLE
+### for FreeBSD 11.0-STABLE
 
 * See `dot-kerlrc-freebsd`
 * Use `clang`
 
-### for Mac OS X 10.11
+### for macOS 10.12
 
 * See `dot-kerlrc-osx`
 * Use `clang`
 * Use OpenSSL in homebrew at `/usr/local/opt/openssl`
-* Java required when using JDK: see <https://support.apple.com/kb/DL1572>
+* Java required when using JDK: see <https://support.apple.com/kb/DL1572> for OS X 10.11 or older, download directly from Oracle's site for macOS 10.12 and later
 * Update ccache to the latest version
 * If build fails, try it again *without* ccache
 
