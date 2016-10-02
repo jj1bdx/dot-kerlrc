@@ -1,7 +1,7 @@
 # since .kerl is a dot file for /bin/sh, exporting inside the environment will define the env variables
 # NOTE WELL: these export command will affect *your login environment* when activating curl!
 # for clang with concurrent make
-#export CC=clang CXX=clang CFLAGS="-O3 -fstack-protector" LDFLAGS="-fstack-protector" MAKEFLAGS="-j4"
+#export CC=clang CXX=clang CFLAGS="-O3 -fstack-protector-strong" LDFLAGS="-fstack-protector-strong" MAKEFLAGS="-j4"
 #
 # Build name: VERSION-dtrace
 # This is the default: with dtrace 
