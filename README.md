@@ -1,6 +1,6 @@
 # dot-kerlrc
 
-Configuration file `.kerlrc` for [kerl](https://github.com/yrashk/kerl/).
+Configuration file `.kerlrc` for [kerl](https://github.com/kerl/kerl/).
 
 ## License
 
