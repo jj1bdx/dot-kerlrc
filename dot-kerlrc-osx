@@ -1,11 +1,16 @@
 # since .kerl is a dot file for /bin/sh, exporting inside the environment will define the env variables
 # NOTE WELL: the export commands will affect *your login environment* when activating curl!
-# with wx, HiPE enabled
+#
+# with wx, HiPE disabled 
 # OpenSSL from HomeBrew (OS X no longer supports OpenSSL)
-# with ccache'd compiler
-# Note: update the ccache to the latest version
-#       to catch up with the Xcode's compatibility
+# with original C compiler
 KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/cc CXX=/usr/local/opt/ccache/libexec/c++ --enable-m64-build --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx --with-ssl=/usr/local/opt/openssl"
-# Alternate build if ccache fails (only CC and CXX differ)
+# without wx
+# note: debugger, observer, et are wx dependent
+#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/cc CXX=/usr/local/opt/ccache/libexec/c++ --enable-m64-build --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-ssl=/usr/local/opt/openssl --without-wx --without-debugger --without-observer --without-et"
+# without wx but disabling wx config only
+# note: debugger, observer, et are wx dependent
+#KERL_CONFIGURE_OPTIONS="CC=/usr/local/opt/ccache/libexec/cc CXX=/usr/local/opt/ccache/libexec/c++ --enable-m64-build --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-ssl=/usr/local/opt/openssl --with-wx-config=/dev/null"
+# Alternate build for the time being with OS X 10.11.6 and Xcode 8
 # Do not use ccache here
 #KERL_CONFIGURE_OPTIONS="CC=cc CXX=c++ --enable-m64-build --enable-darwin-64bit --disable-hipe --enable-vm-probes --with-dynamic-trace=dtrace --disable-native-libs --enable-kernel-poll --without-odbc --enable-threads --enable-smp-support --with-wx --with-ssl=/usr/local/opt/openssl"
