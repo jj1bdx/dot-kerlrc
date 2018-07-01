@@ -42,6 +42,8 @@ I have removed individual .kerlrc files so that I can fix the execution environm
 
 ### OpenSSL 1.1.0h
 
+(From [installation memo of @voluntas](https://gist.github.com/voluntas/303d0ca6cfe3869497a8da37f143f946))
+
 ```
 curl -LO https://www.openssl.org/source/openssl-1.1.0h.tar.gz
 tar xvfz openssl-1.1.0h.tar.gz
