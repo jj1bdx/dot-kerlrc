@@ -10,7 +10,7 @@ env \
     LDFLAGS="-fstack-protector-strong" \
     MAKEFLAGS="-j2" \
     KERL_BUILD_PLT="yes" \
-    KERL_CONFIGURE_OPTIONS="--enable-m64-build --disable-native-libs --enable-vm-probes --with-dynamic-trace=dtrace --with-ssl=/usr/local --enable-hipe --enable-kernel-poll --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-odbc --enable-threads --enable-smp-support --disable-silent-rules" \
+    KERL_CONFIGURE_OPTIONS="--enable-m64-build --disable-native-libs --enable-vm-probes --with-dynamic-trace=dtrace --with-ssl=/usr/local --enable-hipe --enable-kernel-poll --enable-dirty-schedulers --enable-sharing-preserving --enable-lock-counter --disable-sctp --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-javac --without-odbc --enable-threads --enable-smp-support --disable-silent-rules" \
     kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${OTP_VERSION}-dtrace
 ###
 # build without dtrace
@@ -20,5 +20,5 @@ env \
     LDFLAGS="-fstack-protector-strong" \
     MAKEFLAGS="-j2" \
     KERL_BUILD_PLT="yes" \
-    KERL_CONFIGURE_OPTIONS="--enable-m64-build --disable-native-libs --disable-vm-probes --with-ssl=/usr/local --enable-hipe --enable-kernel-poll --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-odbc --enable-threads --enable-smp-support --disable-silent-rules" \
+    KERL_CONFIGURE_OPTIONS="--enable-m64-build --disable-native-libs --disable-vm-probes --with-ssl=/usr/local --enable-hipe --enable-kernel-poll --enable-dirty-schedulers --enable-sharing-preserving --enable-lock-counter --disable-sctp --with-wx-config=/usr/local/bin/wxgtk2u-2.8-config --without-javac --without-odbc --enable-threads --enable-smp-support --disable-silent-rules" \
     kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${OTP_VERSION}
