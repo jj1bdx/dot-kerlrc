@@ -40,17 +40,17 @@ See [OpenSSL.md](OpenSSL.md)
 
 ### FreeBSD 11.2-STABLE
 
-* See `otp-build-from-git-freebsd.sh`
+* See [otp-build-from-git-freebsd.sh](otp-build-from-git-freebsd.sh)
 * Use `clang`
 
 ### macOS 10.14
 
-* See `otp-build-from-git-macos.sh`
+* See [otp-build-from-git-macos.sh](otp-build-from-git-macos.sh)
 * Update ccache to the latest version
 * If build fails, try it again *without* ccache
 
 ### Ubuntu 18.04 LTS
 
-* See `otp-build-from-git-ubuntu.sh`
+* See [otp-build-from-git-ubuntu.sh](otp-build-from-git-ubuntu.sh)
 * required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0-dev`
 
