@@ -40,15 +40,15 @@ I have removed individual .kerlrc files so that I can fix the execution environm
 
 ## for Ubuntu 18.04 LTS (Bionic)
 
-### OpenSSL 1.1.0h
+### OpenSSL 1.1.1
 
 (From [installation memo of @voluntas](https://gist.github.com/voluntas/303d0ca6cfe3869497a8da37f143f946))
 
 ```
-curl -LO https://www.openssl.org/source/openssl-1.1.0h.tar.gz
-tar xvfz openssl-1.1.0h.tar.gz
-cd openssl-1.1.0h
-./config --prefix=/opt/openssl/1.1.0h
+curl -LO https://www.openssl.org/source/openssl-1.1.1.tar.gz
+tar xvfz openssl-1.1.1.tar.gz
+cd openssl-1.1.1
+./config --prefix=/opt/openssl/1.1.1
 make
 sudo zsh
 umask 022
@@ -59,7 +59,7 @@ exit
 ### Other required packages
 
 * See `otp-build-from-git-ubuntu.sh`
-* Install OpenSSL at `/opt/openssl/1.1.0h`
+* Install OpenSSL at `/opt/openssl/1.1.1`
 * required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0-dev`
 
 ## NOTE VERY WELL
