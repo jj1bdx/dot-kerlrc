@@ -1,7 +1,8 @@
 #!/bin/sh
 OTP_VERSION=$1
-OPENSSL_LOCAL="/home/kenji/openssl/1.1.1"
-# For FreeBSD 10.x and 11.x
+OPENSSL_LOCAL="/usr" # Uses FreeBSD 12.0 base OpenSSL (1.1.1a)
+#OPENSSL_LOCAL="/home/kenji/openssl/1.1.1"
+# For FreeBSD 10, 11, and 12
 # see <https://svnweb.freebsd.org/ports/head/lang/erlang-runtime19/Makefile?r1=420350&r2=420841> for the MAP_NORESERVE flag
 ###
 # build with dtrace
