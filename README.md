@@ -9,18 +9,18 @@ Public domain. See [UNLICENSE](UNLICENSE).
 ## compilation command set example
 
     kerl update releases
-    kerl build 21.1 21.1
-    kerl install 21.1 /home/kenji/otp/21.1
+    kerl build 21.1.3 21.1.3
+    kerl install 21.1.3 /home/kenji/otp/21.1.3
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-21.1 21.1
+    kerl build git https://github.com/erlang/otp/ OTP-21.1.3 21.1.3
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 21.0 21.0-test
+    env MAKEFLAGS="-j8" kerl build 21.1.3 21.1.3-test
 
 ## On .kerlrc
 
@@ -38,9 +38,10 @@ I have removed individual .kerlrc files so that I can fix the execution environm
 
 See [OpenSSL.md](OpenSSL.md)
 
-### FreeBSD 11.2-STABLE
+### FreeBSD 12.0-STABLE
 
 * See [otp-build-from-git-freebsd.sh](otp-build-from-git-freebsd.sh)
+* The example uses the base OpenSSL (1.1.1a-freebsd)
 * Use `clang`
 
 ### macOS 10.14
