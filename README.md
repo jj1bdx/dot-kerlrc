@@ -9,22 +9,22 @@ Public domain. See [UNLICENSE](UNLICENSE).
 ## compilation command set example
 
     kerl update releases
-    kerl build 21.1.3 21.1.3
-    kerl install 21.1.3 /home/kenji/otp/21.1.3
+    kerl build 22.0.2 22.0.2
+    kerl install 22.0.2 /home/kenji/otp/22.0.2
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-21.1.3 21.1.3
+    kerl build git https://github.com/erlang/otp/ OTP-22.0.2 22.0.2
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 21.1.3 21.1.3-test
+    env MAKEFLAGS="-j8" kerl build 22.0.2 22.0.2-test
 
 ## On .kerlrc
 
-I have removed individual .kerlrc files so that I can fix the execution environment inside the shell scripts. Use the shell scripts.
+I have removed individual .kerlrc files to encapsulate the execution environment inside the shell scripts. Use the shell scripts.
 
 ## Tips and caveats
 
@@ -32,17 +32,15 @@ I have removed individual .kerlrc files so that I can fix the execution environm
 * The `export` commands will affect *your login environment* when activating curl!
 * Rule of thumb: keep .kerlrc entries *all commented out* or use independent shell scripts
 
+### On HiPE
+
+* `--disable-hipe` flag is set since [HiPE support has been incomplete since 22.0](http://erlang.2086793.n4.nabble.com/HiPE-in-OTP-22-td4725613.html).
+
 ## Installation
 
 ### Use the latest OpenSSL (1.1.1)
 
 See [OpenSSL.md](OpenSSL.md)
-
-### FreeBSD 12.0-STABLE
-
-* See [otp-build-from-git-freebsd.sh](otp-build-from-git-freebsd.sh)
-* The example uses the base OpenSSL (1.1.1a-freebsd)
-* Use `clang`
 
 ### macOS 10.14
 
