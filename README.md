@@ -9,18 +9,18 @@ Public domain. See [UNLICENSE](UNLICENSE).
 ## compilation command set example
 
     kerl update releases
-    kerl build 22.0.2 22.0.2
-    kerl install 22.0.2 /home/kenji/otp/22.0.2
+    kerl build 23.0 23.0
+    kerl install 23.0 /home/kenji/otp/23.0
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-22.0.2 22.0.2
+    kerl build git https://github.com/erlang/otp/ OTP-23.0 23.0
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 22.0.2 22.0.2-test
+    env MAKEFLAGS="-j8" kerl build 23.0 23.0-test
 
 ## On .kerlrc
 
@@ -48,8 +48,20 @@ See [OpenSSL.md](OpenSSL.md)
 * Update ccache to the latest version
 * If build fails, try it again *without* ccache
 
+```sh
+    otp-build-from-git-macos.sh 23.0
+    KERL_BUILD_DOCS="yes" kerl install 23.0 /Users/kenji/otp/23.0
+```
+
 ### Ubuntu 18.04 LTS
 
 * See [otp-build-from-git-ubuntu.sh](otp-build-from-git-ubuntu.sh)
-* required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0-dev`
+* required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0`
+* required packages for building documentation: `xsltproc`
 
+```sh
+    otp-build-from-git-ubuntu.sh 23.0
+    KERL_BUILD_DOCS="yes" kerl install 23.0 /Users/kenji/otp/23.0
+```
+
+[End of README.md]
