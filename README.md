@@ -53,7 +53,7 @@ See [OpenSSL.md](OpenSSL.md)
     KERL_BUILD_DOCS="yes" kerl install 23.0 /Users/kenji/otp/23.0
 ```
 
-### Ubuntu 18.04 LTS
+### Ubuntu 20.04 LTS
 
 * See [otp-build-from-git-ubuntu.sh](otp-build-from-git-ubuntu.sh)
 * required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0`
@@ -61,7 +61,7 @@ See [OpenSSL.md](OpenSSL.md)
 
 ```sh
     otp-build-from-git-ubuntu.sh 23.0
-    KERL_BUILD_DOCS="yes" kerl install 23.0 /Users/kenji/otp/23.0
+    KERL_BUILD_DOCS="yes" kerl install 23.0 /home/kenji/otp/23.0
 ```
 
 [End of README.md]
