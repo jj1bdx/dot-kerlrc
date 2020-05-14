@@ -50,7 +50,8 @@ See [OpenSSL.md](OpenSSL.md)
 
 ```sh
     otp-build-from-git-macos.sh 23.0
-    KERL_BUILD_DOCS="yes" kerl install 23.0 /Users/kenji/otp/23.0
+    env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
+	kerl install 23.0 /Users/kenji/otp/23.0
 ```
 
 ### Ubuntu 20.04 LTS
@@ -61,7 +62,8 @@ See [OpenSSL.md](OpenSSL.md)
 
 ```sh
     otp-build-from-git-ubuntu.sh 23.0
-    KERL_BUILD_DOCS="yes" kerl install 23.0 /home/kenji/otp/23.0
+    env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
+	kerl install 23.0 /home/kenji/otp/23.0
 ```
 
 [End of README.md]
