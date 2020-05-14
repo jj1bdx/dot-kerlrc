@@ -9,6 +9,6 @@ env \
     CFLAGS="-O3 -fstack-protector-strong" LDFLAGS="-fstack-protector-strong" \
     MAKEFLAGS="-j2" \
     KERL_BUILD_PLT="yes" \
-    KERL_CONFIGURE_OPTIONS="--enable-kernel-poll --disable-hipe --enable-dirty-schedulers --enable-sharing-preserving --enable-lock-counter --disable-sctp --disable-dynamic-ssl-lib --with-ssl=/opt/openssl/1.1.1 --without-javac --without-odbc --disable-silent-rules --with-wx-config=/usr/bin/wx-config" \
+    KERL_CONFIGURE_OPTIONS="--enable-kernel-poll --disable-hipe --enable-dirty-schedulers --enable-sharing-preserving --enable-lock-counter --enable-esock --disable-sctp --disable-dynamic-ssl-lib --with-ssl=/opt/openssl/1.1.1 --without-javac --without-odbc --disable-silent-rules --with-wx-config=/usr/bin/wx-config" \
     KERL_BUILD_DOCS="yes" \
     kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${OTP_VERSION}
