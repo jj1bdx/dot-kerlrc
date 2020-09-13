@@ -5,7 +5,7 @@
 OTP_VERSION=$1
 env \
     CC=/usr/lib/ccache/cc \
-    CXX=/usr/lib/ccache/cc \
+    CXX=/usr/lib/ccache/c++ \
     CFLAGS="-O3 -fstack-protector-strong" LDFLAGS="-fstack-protector-strong" \
     MAKEFLAGS="-j2" \
     KERL_BUILD_PLT="yes" \

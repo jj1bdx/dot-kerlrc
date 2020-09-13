@@ -4,8 +4,8 @@ OTP_VERSION=$1
 OPENSSL_LOCAL="/usr/local/opt/openssl@1.1"
 #
 env \
-    CC=/usr/local/opt/ccache/libexec/cc \
-    CXX=/usr/local/opt/ccache/libexec/cc \
+    CC=/usr/local/opt/ccache/libexec/clang \
+    CXX=/usr/local/opt/ccache/libexec/clang++ \
     CFLAGS="-O3 -fstack-protector-strong" LDFLAGS="-fstack-protector-strong" \
     MAKEFLAGS="-j2" \
     KERL_BUILD_PLT="yes" \
