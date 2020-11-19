@@ -12,5 +12,4 @@ env \
     KERL_BUILD_PLT="yes" \
     KERL_CONFIGURE_OPTIONS="--enable-m64-build --enable-darwin-64bit --disable-vm-probes --disable-native-libs --enable-kernel-poll --enable-dirty-schedulers --enable-sharing-preserving --enable-lock-counter --enable-esock --disable-sctp --without-javac --without-odbc --enable-threads --enable-smp-support --with-wx --with-ssl=${OPENSSL_LOCAL} --disable-silent-rules --disable-dynamic-ssl-lib" \
     KERL_BUILD_DOCS="yes" \
-    kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${OTP_VERSION} && \
-    kerl install ${OTP_VERSION} ${INSTALL_DIR_PREFIX}${OTP_VERSION}
+    sh -c "(kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${OTP_VERSION} && kerl install ${OTP_VERSION} ${INSTALL_DIR_PREFIX}${OTP_VERSION})"
