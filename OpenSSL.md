@@ -9,10 +9,10 @@
 ## Ubuntu
 
 ```sh
-curl -LO https://www.openssl.org/source/openssl-1.1.1.tar.gz
-tar xvfz openssl-1.1.1.tar.gz
-cd openssl-1.1.1
-./config --prefix=/opt/openssl/1.1.1
+curl -LO https://www.openssl.org/source/openssl-1.1.1i.tar.gz
+tar xvfz openssl-1.1.1i.tar.gz
+cd openssl-1.1.1i
+./config --prefix=/opt/openssl/1.1.1i
 make
 # install as root
 sudo zsh
@@ -23,4 +23,4 @@ exit
 
 ## Reference
 
-[installation memo of @voluntas](https://gist.github.com/voluntas/303d0ca6cfe3869497a8da37f143f946)
+[installation memo of @voluntas](https://zenn.dev/voluntas/articles/erlang-source-code-install)
