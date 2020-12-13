@@ -5,8 +5,8 @@
 OTP_VERSION=$1
 OPENSSL_LOCAL=/opt/openssl/1.1.1i
 env \
-    CC=/usr/lib/ccache/cc \
-    CXX=/usr/lib/ccache/c++ \
+    CC=/usr/lib/ccache/gcc \
+    CXX=/usr/lib/ccache/g++ \
     CFLAGS="-O3 -fstack-protector-strong" LDFLAGS="-fstack-protector-strong" \
     MAKEFLAGS="-j12" \
     KERL_BUILD_PLT="yes" \
