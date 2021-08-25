@@ -9,10 +9,10 @@
 ## Ubuntu
 
 ```sh
-curl -LO https://www.openssl.org/source/openssl-1.1.1k.tar.gz
-tar xvfz openssl-1.1.1k.tar.gz
-cd openssl-1.1.1k
-./config --prefix=/opt/openssl/1.1.1k
+curl -LO https://www.openssl.org/source/openssl-1.1.1l.tar.gz
+tar xvfz openssl-1.1.1l.tar.gz
+cd openssl-1.1.1l
+./config --prefix=/opt/openssl/1.1.1l
 make
 # install as root
 sudo zsh
