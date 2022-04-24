@@ -4,7 +4,7 @@
 # required packages for documentation: xsltproc fop libxml2-utils
 INSTALL_DIR_PREFIX=/home/kenji/otp/
 OTP_VERSION=$1
-OPENSSL_LOCAL=/opt/openssl/1.1.1l
+OPENSSL_LOCAL=/opt/openssl/1.1.1n
 env \
     CC=/usr/lib/ccache/gcc \
     CXX=/usr/lib/ccache/g++ \
