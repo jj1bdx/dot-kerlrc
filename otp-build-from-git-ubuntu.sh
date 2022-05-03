@@ -3,7 +3,7 @@
 # required packages: build-essential libncurses5-dev autoconf libwxgtk3.0-dev
 # required packages for documentation: xsltproc fop libxml2-utils
 OTP_VERSION=$1
-OPENSSL_LOCAL=/opt/openssl/1.1.1l
+OPENSSL_LOCAL=/opt/openssl/1.1.1o
 env \
     CC=/usr/lib/ccache/gcc \
     CXX=/usr/lib/ccache/g++ \
