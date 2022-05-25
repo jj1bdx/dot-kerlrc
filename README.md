@@ -9,18 +9,18 @@ Public domain. See [UNLICENSE](UNLICENSE).
 ## compilation command set example
 
     kerl update releases
-    kerl build 24.1 24.1
-    kerl install 24.1 /home/kenji/otp/24.1
+    kerl build 25.0 25.0
+    kerl install 25.0 /home/kenji/otp/25.0
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-24.1.5 24.1.5
+    kerl build git https://github.com/erlang/otp/ OTP-25.0 25.0
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 24.1.5 24.1.5-test
+    env MAKEFLAGS="-j8" kerl build 25.0 25.0-test
 
 ## On .kerlrc
 
@@ -38,8 +38,6 @@ I have removed individual .kerlrc files to encapsulate the execution environment
 
 ## Installation
 
-### Use the latest OpenSSL (1.1.1)
-
 See [OpenSSL.md](OpenSSL.md)
 
 ### macOS
@@ -49,21 +47,22 @@ See [OpenSSL.md](OpenSSL.md)
 * If build fails, try it again *without* ccache
 
 ```sh
-    otp-build-from-git-macos.sh 24.1.5
+    otp-build-from-git-macos.sh 25.0
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-	kerl install 24.1.5 /Users/kenji/otp/24.1.5
+	kerl install 25.0 /Users/kenji/otp/25.0
 ```
 
-### Ubuntu 20.04 LTS
+### Ubuntu 22.04 LTS
 
 * See [otp-build-from-git-ubuntu.sh](otp-build-from-git-ubuntu.sh)
 * required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0`
 * required packages for building documentation: `xsltproc`
+* Install OpenSSL 1.1.1o for the stable binary
 
 ```sh
-    otp-build-from-git-ubuntu.sh 24.1.5
+    otp-build-from-git-ubuntu.sh 25.0
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-	kerl install 24.1.5 /home/kenji/otp/24.1.5
+	kerl install 25.0 /home/kenji/otp/25.0
 ```
 
 [End of README.md]
