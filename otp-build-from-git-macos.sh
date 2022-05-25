@@ -1,7 +1,7 @@
 #!/bin/sh
 # For macOS with HomeBrew OpenSSL
 OTP_VERSION=$1
-OPENSSL_LOCAL="/usr/local/opt/openssl@3"
+OPENSSL_LOCAL="/usr/local/opt/openssl@1.1"
 INSTALL_DIR_PREFIX="/Users/kenji/otp/"
 INSTALL_NAME=${OTP_VERSION}
 #
