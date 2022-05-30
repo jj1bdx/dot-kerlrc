@@ -10,7 +10,6 @@
 #
 ../configure \
       --prefix="/opt/wx-3.1" \
-      --enable-compat28 \
       --enable-compat30 \
       --enable-unicode \
       --enable-webview \

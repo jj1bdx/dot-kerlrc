@@ -17,8 +17,9 @@ sudo apt install \
 ### Manual build
 
 * Download the source code from <https://www.wxwidgets.org/downloads/>
-* OTP 25.0 *cannot compile* with wxWidgets-3.1.6.0 wxGTK as they are
+* OTP 25.0 can compile with wxWidgets-3.1.6.0 wxGTK as they are
   - See wxwidgets3.1-k2r-configure.sh for the building options
+    - Disable compat28 by not specifying `--enable-compat28`
   - See https://github.com/erlang/otp/issues/6022 for the details
   - See https://github.com/erlang/otp/pull/6023 for the workaround
 * OTP 25.0 can compile with wxWidgets-3.0.5 wxGTK
