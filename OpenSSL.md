@@ -15,17 +15,17 @@
 
 ### Manual installation of OpenSSL for Ubuntu
 
-* Use OpenSSL 1.1.1p for the stable release
-* OpenSSL 3.0.4 is also usable (experimental)
+* Use OpenSSL 1.1.1q for the stable release
+* OpenSSL 3.0.5 is also usable (experimental)
 
 ```sh
-# For OpenSSL 1.1.1p
+# For OpenSSL 1.1.1q
 # You can build OpenSSL 3.0.4 with this script
-# by rewriting "1.1.1p" to "3.0.4" in the following lines
-curl -LO https://www.openssl.org/source/openssl-1.1.1p.tar.gz
-tar zxvf openssl-1.1.1p.tar.gz
-cd openssl-1.1.1p
-./config --prefix=/opt/openssl/1.1.1p
+# by rewriting "1.1.1q" to "3.0.4" in the following lines
+curl -LO https://www.openssl.org/source/openssl-1.1.1q.tar.gz
+tar zxvf openssl-1.1.1q.tar.gz
+cd openssl-1.1.1q
+./config --prefix=/opt/openssl/1.1.1q
 make
 # install as root
 sudo zsh

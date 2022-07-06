@@ -1,7 +1,7 @@
 #!/bin/sh
 # For Ubuntu with a local OpenSSL
 OTP_VERSION=$1
-OPENSSL_LOCAL="/opt/openssl/1.1.1o"
+OPENSSL_LOCAL="/opt/openssl/1.1.1q"
 INSTALL_DIR_PREFIX="/home/kenji/otp/"
 INSTALL_NAME=${OTP_VERSION}
 env \
