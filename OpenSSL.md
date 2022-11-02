@@ -1,7 +1,7 @@
 # Building local OpenSSL
 
 * Specify the dependent library of OpenSSL at `${OPENSSL_LOCAL}` of each building script
-* Tested on OTP 24.3.4.2 and 25.0.2
+* Tested on OTP 25.1.2
 
 ## MacOS
 
@@ -10,22 +10,23 @@
 
 ## Ubuntu
 
-* Ubuntu 22.04 uses OpenSSL 3 as default
+* Ubuntu 22.04.1 uses OpenSSL 3 as default
 * To use the system OpenSSL 3, set `/usr/` to `$OPENSSL_LOCAL` for the Ubuntu build scripts 
 
 ### Manual installation of OpenSSL for Ubuntu
 
-* Use OpenSSL 1.1.1s for the stable release
-* OpenSSL 3.0.7 is also usable (experimental)
+* OpenSSL 3.0.7 is usable (still partly experimental)
+* Use OpenSSL 1.1.1s if any trouble occurs
 
 ```sh
-# For OpenSSL 1.1.1q
-# You can build OpenSSL 3.0.7 with this script
-# by rewriting "1.1.1s" to "3.0.7" in the following lines
-curl -LO https://www.openssl.org/source/openssl-1.1.1s.tar.gz
-tar zxvf openssl-1.1.1s.tar.gz
-cd openssl-1.1.1s
-./config --prefix=/opt/openssl/1.1.1s
+# For OpenSSL 3.0.7
+# You can build OpenSSL 1.1.1s with this script
+# by rewriting "3.0.7 to "1.1.1s" in the following lines
+curl -LO https://www.openssl.org/source/openssl-3.0.7.tar.gz
+tar zxvf openssl-3.0.7.tar.gz
+cd openssl-3.0.7
+# use ./config for OpenSSL 1.1.1s
+./Configure --prefix=/opt/openssl/3.0.7
 make
 # install as root
 sudo zsh
