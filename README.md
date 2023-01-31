@@ -65,4 +65,9 @@ See [OpenSSL.md](OpenSSL.md)
 	kerl install 25.0 /home/kenji/otp/25.0
 ```
 
+## Other scripts
+
+* fetch-github-elixir.sh: update local copy of Elixir repository
+* fetch-github-otp.sh: update local copy of Erlang/OTP repository
+
 [End of README.md]
