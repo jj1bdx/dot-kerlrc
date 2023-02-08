@@ -1,7 +1,7 @@
 # Building local OpenSSL
 
 * Specify the dependent library of OpenSSL at `${OPENSSL_LOCAL}` of each building script
-* Tested on OTP 25.1.2
+* Tested on OTP 25.2.2
 
 ## MacOS
 
@@ -15,18 +15,18 @@
 
 ### Manual installation of OpenSSL for Ubuntu
 
-* OpenSSL 3.0.7 is usable (still partly experimental)
-* Use OpenSSL 1.1.1s if any trouble occurs
+* OpenSSL 3.0.8 is usable (still partly experimental)
+* Use OpenSSL 1.1.1t if any trouble occurs
 
 ```sh
-# For OpenSSL 3.0.7
-# You can build OpenSSL 1.1.1s with this script
-# by rewriting "3.0.7 to "1.1.1s" in the following lines
-curl -LO https://www.openssl.org/source/openssl-3.0.7.tar.gz
-tar zxvf openssl-3.0.7.tar.gz
-cd openssl-3.0.7
-# use ./config for OpenSSL 1.1.1s
-./Configure --prefix=/opt/openssl/3.0.7
+# For OpenSSL 3.0.8
+# You can build OpenSSL 1.1.1t with this script
+# by rewriting "3.0.8" to "1.1.1t" in the following lines
+curl -LO https://www.openssl.org/source/openssl-3.0.8.tar.gz
+tar zxvf openssl-3.0.8.tar.gz
+cd openssl-3.0.8
+# use ./config for OpenSSL 1.1.1t
+./Configure --prefix=/opt/openssl/3.0.8
 make
 # install as root
 sudo zsh
