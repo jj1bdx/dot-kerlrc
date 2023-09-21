@@ -1,12 +1,15 @@
 # Building local OpenSSL
 
 * Specify the dependent library of OpenSSL at `${OPENSSL_LOCAL}` of each building script
-* Tested on OTP 25.2.2
+* Tested on OTP 26.0.2
+
+## OpenSSL 1.x has passed EoL on 11-SEP-2023
+
+Use OpenSSL 3.x
 
 ## MacOS
 
-* Use HomeBrew OpenSSL 1.1 for stable release: `brew install openssl@1.1`
-* HomeBrew OpenSSL 3.0 is usable as well: `brew install openssl`
+* HomeBrew: `brew install openssl`
 
 ## Ubuntu
 
@@ -15,23 +18,19 @@
 
 ### Manual installation of OpenSSL for Ubuntu
 
-* OpenSSL 3.0.8 is usable (still partly experimental)
-* Use OpenSSL 1.1.1t if any trouble occurs
+* Use OpenSSL 3.1.3 
 
 ```sh
-# For OpenSSL 3.0.8
-# You can build OpenSSL 1.1.1t with this script
-# by rewriting "3.0.8" to "1.1.1t" in the following lines
-curl -LO https://www.openssl.org/source/openssl-3.0.8.tar.gz
-tar zxvf openssl-3.0.8.tar.gz
-cd openssl-3.0.8
-# use ./config for OpenSSL 1.1.1t
-./Configure --prefix=/opt/openssl/3.0.8
-make
+# For OpenSSL 3.1.3
+curl -LO https://www.openssl.org/source/openssl-3.1.3.tar.gz
+tar xvf openssl-3.0.8.tar.gz
+cd openssl-3.1.3
+./config --prefix=/opt/openssl/3.1.3 no-shared no-module
+make -j
 # install as root
 sudo zsh
 umask 022
-make install
+make install_sw
 exit
 ```
 
