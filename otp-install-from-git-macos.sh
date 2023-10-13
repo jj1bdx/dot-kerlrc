@@ -13,5 +13,5 @@ env \
     KERL_BUILD_DOCS="yes" \
     KERL_DOC_TARGETS="man html chunks" \
     KERL_BUILD_PLT="yes" \
-    KERL_CONFIGURE_OPTIONS="-disable-dynamic-ssl-lib -enable-kernel-poll --enable-dirty-schedulers --disable-sctp --disable-sharing-preserving --without-javac --without-odbc --with-ssl=${OPENSSL_LOCAL}" \
+    KERL_CONFIGURE_OPTIONS="--disable-dynamic-ssl-lib --enable-kernel-poll --enable-dirty-schedulers --disable-sctp --disable-sharing-preserving --without-javac --without-odbc --with-ssl=${OPENSSL_LOCAL}" \
     sh -c "(kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${INSTALL_NAME} && kerl install ${INSTALL_NAME} ${INSTALL_DIR_PREFIX}${INSTALL_NAME})"
