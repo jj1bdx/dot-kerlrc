@@ -9,18 +9,18 @@ Public domain. See [UNLICENSE](UNLICENSE).
 ## compilation command set example
 
     kerl update releases
-    kerl build 26.1 26.1
-    kerl install 26.1 /home/kenji/otp/26.1
+    kerl build 26.1.2 26.1.2
+    kerl install 26.1.2 /home/kenji/otp/26.1.2
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-26.1 26.1
+    kerl build git https://github.com/erlang/otp/ OTP-26.1.2 26.1.2
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 26.1 26.1-test
+    env MAKEFLAGS="-j8" kerl build 26.1.2 26.1.2-test
 
 ## On .kerlrc
 
@@ -43,9 +43,9 @@ See [OpenSSL.md](OpenSSL.md)
 * If build fails, try it again *without* ccache
 
 ```sh
-    otp-build-from-git-macos.sh 26.1
+    otp-build-from-git-macos.sh 26.1.2
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-	kerl install 26.1 /Users/kenji/otp/26.1
+  	kerl install 26.1.2 /Users/kenji/otp/26.1.2
 ```
 
 ### Ubuntu 22.04 LTS
@@ -56,9 +56,9 @@ See [OpenSSL.md](OpenSSL.md)
 * Install OpenSSL 1.1.1o for the stable binary
 
 ```sh
-    otp-build-from-git-ubuntu.sh 26.1
+    otp-build-from-git-ubuntu.sh 26.1.2
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-	kerl install 26.1 /home/kenji/otp/26.1
+  	kerl install 26.1.2 /home/kenji/otp/26.1.2
 ```
 
 ## Other scripts
