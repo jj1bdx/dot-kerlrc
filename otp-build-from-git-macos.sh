@@ -9,9 +9,9 @@ env \
     CC=/usr/bin/clang \
     CXX=/usr/bin/clang++ \
     CFLAGS="-O3 -fstack-protector-strong" LDFLAGS="-fstack-protector-strong" \
-    MAKEFLAGS="-j" \
+    MAKEFLAGS="-j8" \
     KERL_BUILD_DOCS="yes" \
-    KERL_DOC_TARGETS="man html chunks" \
+    KERL_DOC_TARGETS="chunks" \
     KERL_BUILD_PLT="yes" \
     KERL_CONFIGURE_OPTIONS="--disable-dynamic-ssl-lib --enable-kernel-poll --enable-dirty-schedulers --disable-sctp --disable-sharing-preserving --without-javac --without-odbc --with-ssl=${OPENSSL_LOCAL}" \
     sh -c "(kerl build git https://github.com/jj1bdx/otp/ OTP-${OTP_VERSION} ${INSTALL_NAME})"
