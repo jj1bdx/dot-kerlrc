@@ -14,14 +14,14 @@
 
 ### Manual installation of OpenSSL for Ubuntu
 
-* Use OpenSSL 3.2.0 
+* Use OpenSSL 3.2.1 
 
 ```sh
-# For OpenSSL 3.2.0
-curl -LO https://www.openssl.org/source/openssl-3.2.0.tar.gz
-tar xvf openssl-3.2.0.tar.gz
-cd openssl-3.2.0
-./config --prefix=/opt/openssl/3.2.0 no-shared no-module
+# For OpenSSL 3.2.1
+curl -LO https://www.openssl.org/source/openssl-3.2.1.tar.gz
+tar xvf openssl-3.2.1.tar.gz
+cd openssl-3.2.1
+./config --prefix=/opt/openssl/3.2.1 no-shared no-module
 make -j
 # install as root
 sudo zsh
