@@ -1,4 +1,6 @@
 #!/bin/sh
+# Note: ~/src/elixir has its OWN forked repository of Elixir already
+# if not, create one
 cd ~/src/elixir
 echo "current directory: `pwd`"
 #git remote add upstream https://github.com/elixir-lang/elixir.git
