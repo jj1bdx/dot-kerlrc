@@ -1,7 +1,7 @@
 #!/bin/sh
 # For Ubuntu with a local OpenSSL
 OTP_VERSION=$1
-OPENSSL_LOCAL="/opt/openssl/3.4.0"
+OPENSSL_LOCAL="/opt/openssl/3.5.0"
 INSTALL_DIR_PREFIX="/home/kenji/otp/"
 INSTALL_NAME=${OTP_VERSION}
 #
@@ -14,5 +14,5 @@ env \
     KERL_BUILD_DOCS="yes" \
     KERL_DOC_TARGETS="chunks" \
     KERL_BUILD_PLT="yes" \
-    KERL_CONFIGURE_OPTIONS="--disable-dynamic-ssl-lib --enable-kernel-poll --enable-dirty-schedulers --disable-sctp --disable-sharing-preserving --without-javac --without-odbc --with-ssl=${OPENSSL_LOCAL} --with-wx-config=/opt/wx-3.2/bin/wx-config" \
+    KERL_CONFIGURE_OPTIONS="--disable-dynamic-ssl-lib --enable-kernel-poll --enable-dirty-schedulers --disable-sctp --disable-sharing-preserving --without-javac --without-odbc --with-ssl=${OPENSSL_LOCAL} --with-wx-config=/usr/bin/wx-config" \
     asdf install erlang ${OTP_VERSION}
