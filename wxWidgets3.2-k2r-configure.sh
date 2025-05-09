@@ -12,25 +12,7 @@
 ../configure \
       --prefix="/opt/wx-3.2" \
       --with-gtk \
-      --enable-clipboard \
-      --enable-controls \
-      --enable-dataviewctrl \
-      --enable-display \
-      --enable-dnd \
-      --enable-graphics_ctx \
-      --enable-std_string \
-      --enable-svg \
-      --enable-unicode \
-      --enable-webviewwebkit \
-      --with-expat \
-      --with-libjpeg \
-      --with-libpng \
-      --with-libtiff \
-      --with-opengl \
-      --with-zlib \
-      --disable-tests \
-      --disable-precomp-headers \
-      --disable-monolithic
-#      --with-liblzma \
-#      --enable-precomp-headers \
-#      --enable-monolithic
+      --enable-compat30
+#      --enable-unicode \
+#      --enable-webview \
+#      --enable-mediactrl \
