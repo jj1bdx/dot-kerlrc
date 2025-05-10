@@ -1,10 +1,5 @@
 # How to install asdf
 
-## Remove kiex
-
-* `kiex implode`
-* Remove kiex scripts
-
 ## macOS Homebrew
 
 brew install asdf
@@ -43,19 +38,18 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 
 ## Set Erlang version
 
-* `asdf set erlang 27.2.4`
+* `asdf set erlang 27.3.4`
 
 ## Install Elixir
 
-* For 1.18.2 with OTP 27: `asdf install elixir 1.18.2-otp-27`
+* For 1.18.3 with OTP 27: `asdf install elixir 1.18.3-otp-27`
 
 ## Set Elixir version
 
-* `asdf set elixir 1.18.2-otp-27`
+* `asdf set elixir 1.18.3-otp-27`
 
 ## Removing old Erlang installations
 
-* `asdf uninstall` doesn't work well
-* Explicitly remove the directory with: `rm -f ~/.asdf/installs/erlang/OTP_VERSION`
+* When `asdf uninstall` doesn't work well, explicitly remove the directory with: `rm -f ~/.asdf/installs/erlang/OTP_VERSION`
 
 [End of document]
