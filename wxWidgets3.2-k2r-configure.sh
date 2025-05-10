@@ -10,9 +10,9 @@
 # Build options quoted from Homebrew wxwidgets
 # Dan Gudmundsson suggested disabling compat28
 ../configure \
-      --prefix="/opt/wx-3.2" \
-      --with-gtk \
-      --enable-compat30
+      --prefix="/opt/wx-3.2"
+#      --with-gtk \
+#      --enable-compat30
 #      --enable-unicode \
 #      --enable-webview \
 #      --enable-mediactrl \
