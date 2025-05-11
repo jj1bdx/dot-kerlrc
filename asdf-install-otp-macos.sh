@@ -23,7 +23,6 @@ CONFIGURE_OPTIONS=" \
   --without-eldap \
   --without-diameter \
   --without-jinterface \
-  --without-snmp \
   " 
 INSTALL_DIR_PREFIX="/home/kenji/otp/"
 INSTALL_NAME=${OTP_VERSION}
