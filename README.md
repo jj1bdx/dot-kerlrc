@@ -6,6 +6,10 @@ Batch Configuration files for [kerl](https://github.com/kerl/kerl/).
 
 Public domain. See [UNLICENSE](UNLICENSE).
 
+## Disclaimer
+
+* No guarantee.
+* The compilation flags and other build parameters may change without notice.
 ## compilation command set example
 
     kerl update releases
