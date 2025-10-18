@@ -14,14 +14,14 @@
 
 ### Manual installation of OpenSSL for Ubuntu
 
-* Use OpenSSL 3.5.3 
+* Use OpenSSL 3.6.0 
 
 ```sh
-# For OpenSSL 3.5.3
-curl -LO https://github.com/openssl/openssl/releases/download/openssl-3.5.3/openssl-3.5.3.tar.gz
-tar xvf openssl-3.5.3.tar.gz
-cd openssl-3.5.3
-./config --prefix=/opt/openssl/3.5.3 no-shared no-module
+# For OpenSSL 3.6.0
+curl -LO https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz
+tar xvf openssl-3.6.0.tar.gz
+cd openssl-3.6.0
+./config --prefix=/opt/openssl/3.6.0 no-shared no-module
 make -j
 # install as root
 sudo zsh
