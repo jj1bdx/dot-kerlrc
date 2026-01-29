@@ -39,30 +39,31 @@ I have removed individual .kerlrc files to encapsulate the execution environment
 # Installation
 
 * See [OpenSSL.md](OpenSSL.md)
-* See also [asdf.md](asdf.md)
 
 ### macOS
 
+* *Note Well: specify git tag full name* after the shell script.
 * See [otp-build-from-git-macos.sh](otp-build-from-git-macos.sh)
 * Update ccache to the latest version
 * If build fails, try it again *without* ccache
 
 ```sh
-    otp-build-from-git-macos.sh 28.1
+    otp-build-from-git-macos.sh OTP-28.1
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-  	kerl install 28.1 /Users/kenji/otp/28.1
+  	kerl install OTP-28.1 /Users/kenji/otp/OTP-28.1
 ```
 
 ### Ubuntu 24.04 LTS
 
+* *Note Well: specify git tag full name* after the shell script.
 * See [otp-build-from-git-ubuntu.sh](otp-build-from-git-ubuntu.sh)
 * required packages: `build-essential libncurses5-dev autoconf libwxgtk3.0`
 * required packages for building documentation: `xsltproc`
 
 ```sh
-    otp-build-from-git-ubuntu.sh 28.1
+    otp-build-from-git-ubuntu.sh OTP-28.1
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-  	kerl install 28.1 /home/kenji/otp/28.1
+  	kerl install OTP-28.1 /home/kenji/otp/OTP-28.1
 ```
 
 ## Other scripts
