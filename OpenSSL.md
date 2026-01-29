@@ -1,7 +1,7 @@
 # Building local OpenSSL
 
 * Specify the dependent library of OpenSSL at `${OPENSSL_LOCAL}` of each building script
-* Tested on OTP 28.1
+* Tested on OTP 28.3.1
 
 ## MacOS
 
@@ -12,16 +12,16 @@
 * Ubuntu 24.04 uses OpenSSL 3 as default
 * To use the system OpenSSL 3, set `/usr/` to `$OPENSSL_LOCAL` for the Ubuntu build scripts 
 
-### Manual installation of OpenSSL for Ubuntu
+## Manual installation of OpenSSL for Ubuntu and other Linux distributions
 
-* Use OpenSSL 3.6.0 
+* Use OpenSSL 3.6.1
 
 ```sh
-# For OpenSSL 3.6.0
-curl -LO https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz
-tar xvf openssl-3.6.0.tar.gz
-cd openssl-3.6.0
-./config --prefix=/opt/openssl/3.6.0 no-shared no-module
+# For OpenSSL 3.6.1
+curl -LO https://github.com/openssl/openssl/releases/download/openssl-3.6.1/openssl-3.6.1.tar.gz
+tar xvf openssl-3.6.1.tar.gz
+cd openssl-3.6.1
+./config --prefix=/opt/openssl/3.6.1 no-shared no-module
 make -j
 # install as root
 sudo zsh
