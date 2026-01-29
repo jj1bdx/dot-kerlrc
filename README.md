@@ -13,18 +13,18 @@ Public domain. See [UNLICENSE](UNLICENSE).
 ## compilation command set example
 
     kerl update releases
-    kerl build 28.1 28.1
-    kerl install 28.1 /home/kenji/otp/28.1
+    kerl build 28.3.1 28.3.1
+    kerl install 28.3.1 /home/kenji/otp/28.3.1
 
 ## For obtaining git release from GitHub Erlang/OTP archive
 
     # use the following `kerl build git` command
-    kerl build git https://github.com/erlang/otp/ OTP-28.1 28.1
+    kerl build git https://github.com/erlang/otp/ OTP-28.3.1 28.3.1
 
 ## Enforcing concurrency in `make`
 
     # set env variable MAKEFLAGS (see otp_build script)
-    env MAKEFLAGS="-j8" kerl build 28.1 28.1-test
+    env MAKEFLAGS="-j8" kerl build 28.3.1 28.3.1-test
 
 ## On .kerlrc
 
@@ -48,9 +48,9 @@ I have removed individual .kerlrc files to encapsulate the execution environment
 * If build fails, try it again *without* ccache
 
 ```sh
-    otp-build-from-git-macos.sh OTP-28.1
+    otp-build-from-git-macos.sh OTP-28.3.1
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-  	kerl install OTP-28.1 /Users/kenji/otp/OTP-28.1
+  	kerl install OTP-28.3.1 /Users/kenji/otp/OTP-28.3.1
 ```
 
 ### Ubuntu 24.04 LTS
@@ -61,9 +61,9 @@ I have removed individual .kerlrc files to encapsulate the execution environment
 * required packages for building documentation: `xsltproc`
 
 ```sh
-    otp-build-from-git-ubuntu.sh OTP-28.1
+    otp-build-from-git-ubuntu.sh OTP-28.3.1
     env KERL_BUILD_PLT="yes" KERL_BUILD_DOCS="yes" \
-  	kerl install OTP-28.1 /home/kenji/otp/OTP-28.1
+  	kerl install OTP-28.3.1 /home/kenji/otp/OTP-28.3.1
 ```
 
 ## Other scripts
